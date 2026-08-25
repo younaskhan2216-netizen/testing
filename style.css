@@ -1,0 +1,573 @@
+/* ==========================================
+   GENERAL
+========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #f1f4f7;
+    color: #222;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header {
+    background: #063b24;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 15px;
+}
+
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+
+header p {
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.container {
+    max-width: 900px;
+
+    margin: 35px auto;
+
+    padding: 15px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   INSTRUCTIONS
+========================================== */
+
+.instructions {
+    background: #f5f7f8;
+
+    border-left: 5px solid #063b24;
+
+    padding: 20px;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+button:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+}
+
+
+.primary {
+    background: #063b24;
+
+    color: white;
+}
+
+
+.secondary {
+    background: #ddd;
+
+    color: #222;
+}
+
+
+.finish {
+    background: #e67e22;
+
+    color: white;
+}
+
+
+/* ==========================================
+   TEST TOP
+========================================== */
+
+.testTop {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   TIMER
+========================================== */
+
+#timer {
+    background: #c62828;
+
+    color: white;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   PROGRESS BAR
+========================================== */
+
+.progress {
+    width: 100%;
+
+    height: 8px;
+
+    background: #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+
+#progressBar {
+    height: 100%;
+
+    width: 0%;
+
+    background: #063b24;
+
+    transition: width 0.3s;
+}
+
+
+/* ==========================================
+   QUESTION
+========================================== */
+
+#question {
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   OPTIONS
+========================================== */
+
+.option {
+    display: block;
+
+    width: 100%;
+
+    text-align: left;
+
+    background: #f5f5f5;
+
+    border: 2px solid #ddd;
+
+    margin-bottom: 12px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+
+.option:hover {
+    border-color: #063b24;
+}
+
+
+.option.selected {
+    background: #dff1e7;
+
+    border-color: #063b24;
+}
+
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.buttons {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 30px;
+
+    gap: 10px;
+}
+
+
+.buttons button {
+    flex: 1;
+}
+
+
+/* ==========================================
+   SCORE
+========================================== */
+
+.scoreBox {
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: #063b24;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 30px auto;
+}
+
+
+#score {
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.scoreBox p {
+    margin-top: 5px;
+}
+
+
+/* ==========================================
+   RESULT DETAILS
+========================================== */
+
+.results {
+    background: #f5f7f8;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+
+.results p {
+    padding: 9px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.results p:last-child {
+    border-bottom: none;
+}
+
+
+/* ==========================================
+   RESULT MESSAGE
+========================================== */
+
+#message {
+    text-align: center;
+
+    font-size: 20px;
+
+    margin: 20px 0;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   ANSWER REVIEW
+========================================== */
+
+.answerReview {
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+.answerReview h3 {
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+
+.reviewInfo {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* Individual Question */
+
+.reviewItem {
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+
+    border: 2px solid #ddd;
+
+    background: #fafafa;
+}
+
+
+/* Correct Question */
+
+.reviewItem.correct {
+    border-color: #2e7d32;
+
+    background: #edf7ee;
+}
+
+
+/* Wrong Question */
+
+.reviewItem.wrong {
+    border-color: #c62828;
+
+    background: #fff0f0;
+}
+
+
+/* Unanswered Question */
+
+.reviewItem.unanswered {
+    border-color: #e67e22;
+
+    background: #fff6ed;
+}
+
+
+/* Review Question */
+
+.reviewQuestion {
+    font-weight: bold;
+
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+}
+
+
+/* Your Answer */
+
+.yourAnswer {
+    margin: 7px 0;
+}
+
+
+/* Correct Answer */
+
+.correctAnswer {
+    margin: 7px 0;
+
+    font-weight: bold;
+}
+
+
+/* Green Text */
+
+.correctText {
+    color: #2e7d32;
+
+    font-weight: bold;
+}
+
+
+/* Red Text */
+
+.wrongText {
+    color: #c62828;
+
+    font-weight: bold;
+}
+
+
+/* Orange Text */
+
+.unansweredText {
+    color: #e67e22;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #666;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+
+    .container {
+        margin: 15px auto;
+
+        padding: 10px;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    #question {
+        font-size: 19px;
+    }
+
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+
+    .buttons button {
+        min-width: 100px;
+    }
+
+
+    .testTop {
+        font-size: 14px;
+    }
+
+
+    #timer {
+        font-size: 16px;
+    }
+
+
+    .scoreBox {
+        width: 150px;
+
+        height: 150px;
+    }
+
+
+    #score {
+        font-size: 30px;
+    }
+
+
+    .results p {
+        font-size: 14px;
+    }
+
+
+    .reviewItem {
+        padding: 14px;
+    }
+
+}

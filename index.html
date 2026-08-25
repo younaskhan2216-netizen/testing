@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PAF Intelligence Test</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1>PAF Intelligence Test</h1>
+        <p>Intelligence Test Practice</p>
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+
+        <!-- ================= START SCREEN ================= -->
+
+        <section id="startScreen" class="card">
+
+            <h2>PAF Intelligence Test</h2>
+
+            <div class="instructions">
+
+                <p>
+                    📝 Total Questions:
+                    <strong>100</strong>
+                </p>
+
+                <p>
+                    ⏱️ Time Limit:
+                    <strong>40 Minutes</strong>
+                </p>
+
+                <p>
+                    ✅ Select one answer for each question.
+                </p>
+
+                <p>
+                    🏆 You can finish the test at any time.
+                </p>
+
+                <p>
+                    📊 Your result and answer review will
+                    appear after finishing.
+                </p>
+
+            </div>
+
+            <button id="startBtn" class="primary">
+                Start Test
+            </button>
+
+        </section>
+
+
+        <!-- ================= TEST SCREEN ================= -->
+
+        <section id="testScreen" class="card hidden">
+
+
+            <!-- Top Information -->
+
+            <div class="testTop">
+
+                <span id="questionNumber">
+                    Question 1 / 100
+                </span>
+
+                <span id="timer">
+                    40:00
+                </span>
+
+            </div>
+
+
+            <!-- Progress Bar -->
+
+            <div class="progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+
+            <!-- Question Area -->
+
+            <div id="questionArea">
+
+                <h2 id="question">
+                    Question will appear here
+                </h2>
+
+
+                <!-- Answer Options -->
+
+                <div id="options"></div>
+
+            </div>
+
+
+            <!-- Navigation Buttons -->
+
+            <div class="buttons">
+
+                <button
+                    id="previousBtn"
+                    class="secondary">
+
+                    Previous
+
+                </button>
+
+
+                <button
+                    id="nextBtn"
+                    class="primary">
+
+                    Next
+
+                </button>
+
+
+                <button
+                    id="finishBtn"
+                    class="finish">
+
+                    Finish Test
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESULT SCREEN ================= -->
+
+        <section id="resultScreen" class="card hidden">
+
+            <h2>Test Completed 🎉</h2>
+
+
+            <!-- Score Circle -->
+
+            <div class="scoreBox">
+
+                <div id="score">
+                    0 / 100
+                </div>
+
+                <p>Score</p>
+
+            </div>
+
+
+            <!-- Result Information -->
+
+            <div class="results">
+
+                <p>
+                    <strong>Correct Answers:</strong>
+                    <span id="correctAnswers">0</span>
+                </p>
+
+
+                <p>
+                    <strong>Wrong Answers:</strong>
+                    <span id="wrongAnswers">0</span>
+                </p>
+
+
+                <p>
+                    <strong>Unanswered:</strong>
+                    <span id="unanswered">0</span>
+                </p>
+
+
+                <p>
+                    <strong>Percentage:</strong>
+                    <span id="percentage">0%</span>
+                </p>
+
+
+                <p>
+                    <strong>Time Used:</strong>
+                    <span id="timeUsed">00:00</span>
+                </p>
+
+            </div>
+
+
+            <!-- Result Message -->
+
+            <p id="message"></p>
+
+
+            <!-- ================= ANSWER REVIEW ================= -->
+
+            <div class="answerReview">
+
+                <h3>Answer Review</h3>
+
+                <p class="reviewInfo">
+                    Review your answers below.
+                </p>
+
+                <div id="reviewList"></div>
+
+            </div>
+
+
+            <!-- Try Again -->
+
+            <button
+                onclick="location.reload()"
+                class="primary">
+
+                Try Again
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            PAF Intelligence Test Practice
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
